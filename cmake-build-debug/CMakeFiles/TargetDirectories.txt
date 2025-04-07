@@ -1,0 +1,14 @@
+/home/leo/CppProgram/Krpc/cmake-build-debug/CMakeFiles/test_logger.dir
+/home/leo/CppProgram/Krpc/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/leo/CppProgram/Krpc/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/leo/CppProgram/Krpc/cmake-build-debug/src/CMakeFiles/krpc_core.dir
+/home/leo/CppProgram/Krpc/cmake-build-debug/src/CMakeFiles/edit_cache.dir
+/home/leo/CppProgram/Krpc/cmake-build-debug/src/CMakeFiles/rebuild_cache.dir
+/home/leo/CppProgram/Krpc/cmake-build-debug/example/CMakeFiles/edit_cache.dir
+/home/leo/CppProgram/Krpc/cmake-build-debug/example/CMakeFiles/rebuild_cache.dir
+/home/leo/CppProgram/Krpc/cmake-build-debug/example/callee/CMakeFiles/server.dir
+/home/leo/CppProgram/Krpc/cmake-build-debug/example/callee/CMakeFiles/edit_cache.dir
+/home/leo/CppProgram/Krpc/cmake-build-debug/example/callee/CMakeFiles/rebuild_cache.dir
+/home/leo/CppProgram/Krpc/cmake-build-debug/example/caller/CMakeFiles/client.dir
+/home/leo/CppProgram/Krpc/cmake-build-debug/example/caller/CMakeFiles/edit_cache.dir
+/home/leo/CppProgram/Krpc/cmake-build-debug/example/caller/CMakeFiles/rebuild_cache.dir

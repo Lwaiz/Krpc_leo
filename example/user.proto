@@ -1,0 +1,39 @@
+syntax="proto3";
+package Kuser;
+
+option cc_generic_services=true; // 生成通用服务接口（仅在需要时）
+// 结果代码
+message ResultCode{
+    int32 errcode = 1; // 错误码，0表示成功
+    bytes errmsg = 2;  // 错误消息
+}
+// 客户端登录请求
+message LoginRequest{
+    bytes name = 1;   // 用户名
+    bytes pwd = 2;    // 密码
+}
+// 服务端响应登录结果
+message LoginResponse{
+    ResultCode result = 1; // 包含错误码和信息
+    bool success = 2;      // 成功标志位
+}
+// 注册请求
+message RegisterRequest{
+    uint32 id = 1;    // 用户 id
+    bytes name = 2;
+    bytes pwd = 3;
+}
+// 注册请求返回响应
+message RegisterResponse{
+    ResultCode result = 1;
+    bool success = 2;
+}
+// 远程服务接口类
+service UserServiceRpc{
+    // 定义Login远程方法
+    // 客户端发送LoginRequest 消息，服务端返回 LoginResponse
+    rpc Login(LoginRequest) returns(LoginResponse);
+    // 定义Register远程方法
+    // 客户端发送注册信息，服务端返回注册结果
+    rpc Register(RegisterRequest) returns(RegisterResponse);
+}
