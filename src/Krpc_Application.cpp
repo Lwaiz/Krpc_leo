@@ -47,9 +47,11 @@ void KrpcApplication::Init(int argc, char **argv) {
                 std::cout << "格式： command -i <配置文件路径>" << std::endl;
                 exit(EXIT_FAILURE);
                 break;
+            default:
+                break;
         }
     }
-    // 加载配置文件
+    // 加载配置文件 存入 m_config 的 config_map 中
     m_config.LoadConfigFile(config_file.c_str());
 }
 
@@ -57,12 +59,13 @@ void KrpcApplication::Init(int argc, char **argv) {
  * @brief 获取单例对象的引用 保证全局只有一个实例
  */
 KrpcApplication &KrpcApplication::GetInstance() {
+    // lock_guard 是互斥锁自动管理工具类，构造时自动调用 m_mutex.lock() ，作用域结束时会自动调用 m_mutex.unlock()
     std::lock_guard<std::mutex> lock(m_mutex);  // 加锁 保证线程安全
     // 如果未创建单例对象，创建
     if(m_application == nullptr) {
         m_application = new KrpcApplication();
         // 注册 atexit 函数，程序退出时自动销毁单例对象
-        atexit(deleteInstance);
+        atexit(deleteInstance);  // atexit 是一个 标准库函数 作用是：注册一个函数，在 main() 结束或程序调用 exit() 时被自动执行
     }
     return *m_application; // 返回单例对象的引用
 }
@@ -76,7 +79,7 @@ void KrpcApplication::deleteInstance() {
     }
 }
 /**
- * @brief 获取全局对象的引用
+ * @brief 获取全局配置对象的引用
  */
 KrpcConfig& KrpcApplication::GetConfig() {
     return m_config;

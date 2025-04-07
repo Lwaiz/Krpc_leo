@@ -69,10 +69,38 @@ include src/CMakeFiles/krpc_core.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/krpc_core.dir/flags.make
 
+src/CMakeFiles/krpc_core.dir/Krpc_Application.cpp.o: src/CMakeFiles/krpc_core.dir/flags.make
+src/CMakeFiles/krpc_core.dir/Krpc_Application.cpp.o: ../src/Krpc_Application.cpp
+src/CMakeFiles/krpc_core.dir/Krpc_Application.cpp.o: src/CMakeFiles/krpc_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leo/CppProgram/Krpc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/krpc_core.dir/Krpc_Application.cpp.o"
+	cd /home/leo/CppProgram/Krpc/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/krpc_core.dir/Krpc_Application.cpp.o -MF CMakeFiles/krpc_core.dir/Krpc_Application.cpp.o.d -o CMakeFiles/krpc_core.dir/Krpc_Application.cpp.o -c /home/leo/CppProgram/Krpc/src/Krpc_Application.cpp
+
+src/CMakeFiles/krpc_core.dir/Krpc_Application.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/krpc_core.dir/Krpc_Application.cpp.i"
+	cd /home/leo/CppProgram/Krpc/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/leo/CppProgram/Krpc/src/Krpc_Application.cpp > CMakeFiles/krpc_core.dir/Krpc_Application.cpp.i
+
+src/CMakeFiles/krpc_core.dir/Krpc_Application.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/krpc_core.dir/Krpc_Application.cpp.s"
+	cd /home/leo/CppProgram/Krpc/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/leo/CppProgram/Krpc/src/Krpc_Application.cpp -o CMakeFiles/krpc_core.dir/Krpc_Application.cpp.s
+
+src/CMakeFiles/krpc_core.dir/Krpc_Channel.cpp.o: src/CMakeFiles/krpc_core.dir/flags.make
+src/CMakeFiles/krpc_core.dir/Krpc_Channel.cpp.o: ../src/Krpc_Channel.cpp
+src/CMakeFiles/krpc_core.dir/Krpc_Channel.cpp.o: src/CMakeFiles/krpc_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leo/CppProgram/Krpc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/krpc_core.dir/Krpc_Channel.cpp.o"
+	cd /home/leo/CppProgram/Krpc/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/krpc_core.dir/Krpc_Channel.cpp.o -MF CMakeFiles/krpc_core.dir/Krpc_Channel.cpp.o.d -o CMakeFiles/krpc_core.dir/Krpc_Channel.cpp.o -c /home/leo/CppProgram/Krpc/src/Krpc_Channel.cpp
+
+src/CMakeFiles/krpc_core.dir/Krpc_Channel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/krpc_core.dir/Krpc_Channel.cpp.i"
+	cd /home/leo/CppProgram/Krpc/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/leo/CppProgram/Krpc/src/Krpc_Channel.cpp > CMakeFiles/krpc_core.dir/Krpc_Channel.cpp.i
+
+src/CMakeFiles/krpc_core.dir/Krpc_Channel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/krpc_core.dir/Krpc_Channel.cpp.s"
+	cd /home/leo/CppProgram/Krpc/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/leo/CppProgram/Krpc/src/Krpc_Channel.cpp -o CMakeFiles/krpc_core.dir/Krpc_Channel.cpp.s
+
 src/CMakeFiles/krpc_core.dir/Krpc_Config.cpp.o: src/CMakeFiles/krpc_core.dir/flags.make
 src/CMakeFiles/krpc_core.dir/Krpc_Config.cpp.o: ../src/Krpc_Config.cpp
 src/CMakeFiles/krpc_core.dir/Krpc_Config.cpp.o: src/CMakeFiles/krpc_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leo/CppProgram/Krpc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/krpc_core.dir/Krpc_Config.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leo/CppProgram/Krpc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/krpc_core.dir/Krpc_Config.cpp.o"
 	cd /home/leo/CppProgram/Krpc/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/krpc_core.dir/Krpc_Config.cpp.o -MF CMakeFiles/krpc_core.dir/Krpc_Config.cpp.o.d -o CMakeFiles/krpc_core.dir/Krpc_Config.cpp.o -c /home/leo/CppProgram/Krpc/src/Krpc_Config.cpp
 
 src/CMakeFiles/krpc_core.dir/Krpc_Config.cpp.i: cmake_force
@@ -83,17 +111,69 @@ src/CMakeFiles/krpc_core.dir/Krpc_Config.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/krpc_core.dir/Krpc_Config.cpp.s"
 	cd /home/leo/CppProgram/Krpc/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/leo/CppProgram/Krpc/src/Krpc_Config.cpp -o CMakeFiles/krpc_core.dir/Krpc_Config.cpp.s
 
+src/CMakeFiles/krpc_core.dir/Krpc_Controller.cpp.o: src/CMakeFiles/krpc_core.dir/flags.make
+src/CMakeFiles/krpc_core.dir/Krpc_Controller.cpp.o: ../src/Krpc_Controller.cpp
+src/CMakeFiles/krpc_core.dir/Krpc_Controller.cpp.o: src/CMakeFiles/krpc_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leo/CppProgram/Krpc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/krpc_core.dir/Krpc_Controller.cpp.o"
+	cd /home/leo/CppProgram/Krpc/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/krpc_core.dir/Krpc_Controller.cpp.o -MF CMakeFiles/krpc_core.dir/Krpc_Controller.cpp.o.d -o CMakeFiles/krpc_core.dir/Krpc_Controller.cpp.o -c /home/leo/CppProgram/Krpc/src/Krpc_Controller.cpp
+
+src/CMakeFiles/krpc_core.dir/Krpc_Controller.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/krpc_core.dir/Krpc_Controller.cpp.i"
+	cd /home/leo/CppProgram/Krpc/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/leo/CppProgram/Krpc/src/Krpc_Controller.cpp > CMakeFiles/krpc_core.dir/Krpc_Controller.cpp.i
+
+src/CMakeFiles/krpc_core.dir/Krpc_Controller.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/krpc_core.dir/Krpc_Controller.cpp.s"
+	cd /home/leo/CppProgram/Krpc/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/leo/CppProgram/Krpc/src/Krpc_Controller.cpp -o CMakeFiles/krpc_core.dir/Krpc_Controller.cpp.s
+
+src/CMakeFiles/krpc_core.dir/Krpc_Provider.cpp.o: src/CMakeFiles/krpc_core.dir/flags.make
+src/CMakeFiles/krpc_core.dir/Krpc_Provider.cpp.o: ../src/Krpc_Provider.cpp
+src/CMakeFiles/krpc_core.dir/Krpc_Provider.cpp.o: src/CMakeFiles/krpc_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leo/CppProgram/Krpc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/krpc_core.dir/Krpc_Provider.cpp.o"
+	cd /home/leo/CppProgram/Krpc/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/krpc_core.dir/Krpc_Provider.cpp.o -MF CMakeFiles/krpc_core.dir/Krpc_Provider.cpp.o.d -o CMakeFiles/krpc_core.dir/Krpc_Provider.cpp.o -c /home/leo/CppProgram/Krpc/src/Krpc_Provider.cpp
+
+src/CMakeFiles/krpc_core.dir/Krpc_Provider.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/krpc_core.dir/Krpc_Provider.cpp.i"
+	cd /home/leo/CppProgram/Krpc/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/leo/CppProgram/Krpc/src/Krpc_Provider.cpp > CMakeFiles/krpc_core.dir/Krpc_Provider.cpp.i
+
+src/CMakeFiles/krpc_core.dir/Krpc_Provider.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/krpc_core.dir/Krpc_Provider.cpp.s"
+	cd /home/leo/CppProgram/Krpc/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/leo/CppProgram/Krpc/src/Krpc_Provider.cpp -o CMakeFiles/krpc_core.dir/Krpc_Provider.cpp.s
+
+src/CMakeFiles/krpc_core.dir/zookeeperUtil.cpp.o: src/CMakeFiles/krpc_core.dir/flags.make
+src/CMakeFiles/krpc_core.dir/zookeeperUtil.cpp.o: ../src/zookeeperUtil.cpp
+src/CMakeFiles/krpc_core.dir/zookeeperUtil.cpp.o: src/CMakeFiles/krpc_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leo/CppProgram/Krpc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/krpc_core.dir/zookeeperUtil.cpp.o"
+	cd /home/leo/CppProgram/Krpc/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/krpc_core.dir/zookeeperUtil.cpp.o -MF CMakeFiles/krpc_core.dir/zookeeperUtil.cpp.o.d -o CMakeFiles/krpc_core.dir/zookeeperUtil.cpp.o -c /home/leo/CppProgram/Krpc/src/zookeeperUtil.cpp
+
+src/CMakeFiles/krpc_core.dir/zookeeperUtil.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/krpc_core.dir/zookeeperUtil.cpp.i"
+	cd /home/leo/CppProgram/Krpc/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/leo/CppProgram/Krpc/src/zookeeperUtil.cpp > CMakeFiles/krpc_core.dir/zookeeperUtil.cpp.i
+
+src/CMakeFiles/krpc_core.dir/zookeeperUtil.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/krpc_core.dir/zookeeperUtil.cpp.s"
+	cd /home/leo/CppProgram/Krpc/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/leo/CppProgram/Krpc/src/zookeeperUtil.cpp -o CMakeFiles/krpc_core.dir/zookeeperUtil.cpp.s
+
 # Object files for target krpc_core
 krpc_core_OBJECTS = \
-"CMakeFiles/krpc_core.dir/Krpc_Config.cpp.o"
+"CMakeFiles/krpc_core.dir/Krpc_Application.cpp.o" \
+"CMakeFiles/krpc_core.dir/Krpc_Channel.cpp.o" \
+"CMakeFiles/krpc_core.dir/Krpc_Config.cpp.o" \
+"CMakeFiles/krpc_core.dir/Krpc_Controller.cpp.o" \
+"CMakeFiles/krpc_core.dir/Krpc_Provider.cpp.o" \
+"CMakeFiles/krpc_core.dir/zookeeperUtil.cpp.o"
 
 # External object files for target krpc_core
 krpc_core_EXTERNAL_OBJECTS =
 
+src/libkrpc_core.a: src/CMakeFiles/krpc_core.dir/Krpc_Application.cpp.o
+src/libkrpc_core.a: src/CMakeFiles/krpc_core.dir/Krpc_Channel.cpp.o
 src/libkrpc_core.a: src/CMakeFiles/krpc_core.dir/Krpc_Config.cpp.o
+src/libkrpc_core.a: src/CMakeFiles/krpc_core.dir/Krpc_Controller.cpp.o
+src/libkrpc_core.a: src/CMakeFiles/krpc_core.dir/Krpc_Provider.cpp.o
+src/libkrpc_core.a: src/CMakeFiles/krpc_core.dir/zookeeperUtil.cpp.o
 src/libkrpc_core.a: src/CMakeFiles/krpc_core.dir/build.make
 src/libkrpc_core.a: src/CMakeFiles/krpc_core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/leo/CppProgram/Krpc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libkrpc_core.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/leo/CppProgram/Krpc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libkrpc_core.a"
 	cd /home/leo/CppProgram/Krpc/cmake-build-debug/src && $(CMAKE_COMMAND) -P CMakeFiles/krpc_core.dir/cmake_clean_target.cmake
 	cd /home/leo/CppProgram/Krpc/cmake-build-debug/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/krpc_core.dir/link.txt --verbose=$(VERBOSE)
 

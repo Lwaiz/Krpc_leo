@@ -48,7 +48,7 @@ ZkClient::~ZkClient() {
 }
 /*
  * 使用 zookeeper_mt 多线程版本
- * zookeeper 的API 客户端提供三个线程
+ * zookeeper 的 API 客户端提供三个线程
  * 1.API调用线程
  * 2.网络I/O线程 (使用pthread_create和poll)
  * 3.watcher回调线程 (使用pthread_create)
@@ -112,10 +112,5 @@ std::string ZkClient::GetData(const char *path) {
     }
     return "";        // 默认返回空字符串
 }
-
-
-
-
-
 
 

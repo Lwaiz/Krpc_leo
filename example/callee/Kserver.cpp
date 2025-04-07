@@ -22,11 +22,11 @@
 /// 继承自 protobuf生成的 RPC 服务基类，用于服务端提供服务
 class UserService : public Kuser::UserServiceRpc{
     /**
-     * @brief 本地登录方法，用于处理实际的业务逻辑
+     * @brief 服务端本地登录方法，用于处理实际的业务逻辑
      */
     bool Login(std::string name, std::string pwd){
         std::cout << "doing local service: Login" << std::endl;
-        std::cout << "name: " << name << " pwd: " << pwd << std::endl;
+        std::cout << " [Login RPC] name: " << name << " pwd: " << pwd << std::endl;
         return true; // 模拟登录成功
     }
 
@@ -52,7 +52,8 @@ class UserService : public Kuser::UserServiceRpc{
         code->set_errmsg("");                // 设置错误信息为空
         response->set_success(login_result); // 设置登录结果
 
-        // 执行回调操作，框架会自动将响应序列化并发送给调用者
+        // 业务逻辑执行完毕  执行回调操作
+        // 框架会自动将响应序列化并发送给调用者
         done->Run();
     }
 };

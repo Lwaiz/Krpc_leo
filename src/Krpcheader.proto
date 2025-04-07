@@ -1,6 +1,6 @@
 syntax="proto3";
 package Krpc;
-// RPC头部格式
+// 构造RPC头部格式
 message RpcHeader{
     bytes service_name=1;  // 服务名
     bytes method_name=2;   // 方法名

@@ -149,12 +149,12 @@ src/clean: src/CMakeFiles/krpc_core.dir/clean
 CMakeFiles/test_logger.dir/all: src/CMakeFiles/krpc_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_logger.dir/build.make CMakeFiles/test_logger.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_logger.dir/build.make CMakeFiles/test_logger.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leo/CppProgram/Krpc/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target test_logger"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leo/CppProgram/Krpc/cmake-build-debug/CMakeFiles --progress-num=12,13 "Built target test_logger"
 .PHONY : CMakeFiles/test_logger.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_logger.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leo/CppProgram/Krpc/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leo/CppProgram/Krpc/cmake-build-debug/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_logger.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leo/CppProgram/Krpc/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/test_logger.dir/rule
@@ -175,12 +175,12 @@ CMakeFiles/test_logger.dir/clean:
 src/CMakeFiles/krpc_core.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/krpc_core.dir/build.make src/CMakeFiles/krpc_core.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/krpc_core.dir/build.make src/CMakeFiles/krpc_core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leo/CppProgram/Krpc/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target krpc_core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leo/CppProgram/Krpc/cmake-build-debug/CMakeFiles --progress-num=3,4,5,6,7,8,9 "Built target krpc_core"
 .PHONY : src/CMakeFiles/krpc_core.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/krpc_core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leo/CppProgram/Krpc/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leo/CppProgram/Krpc/cmake-build-debug/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/krpc_core.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leo/CppProgram/Krpc/cmake-build-debug/CMakeFiles 0
 .PHONY : src/CMakeFiles/krpc_core.dir/rule
@@ -201,12 +201,12 @@ src/CMakeFiles/krpc_core.dir/clean:
 example/callee/CMakeFiles/server.dir/all: src/CMakeFiles/krpc_core.dir/all
 	$(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/server.dir/build.make example/callee/CMakeFiles/server.dir/depend
 	$(MAKE) $(MAKESILENT) -f example/callee/CMakeFiles/server.dir/build.make example/callee/CMakeFiles/server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leo/CppProgram/Krpc/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leo/CppProgram/Krpc/cmake-build-debug/CMakeFiles --progress-num=10,11 "Built target server"
 .PHONY : example/callee/CMakeFiles/server.dir/all
 
 # Build rule for subdir invocation for target.
 example/callee/CMakeFiles/server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leo/CppProgram/Krpc/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leo/CppProgram/Krpc/cmake-build-debug/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/callee/CMakeFiles/server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leo/CppProgram/Krpc/cmake-build-debug/CMakeFiles 0
 .PHONY : example/callee/CMakeFiles/server.dir/rule
@@ -232,7 +232,7 @@ example/caller/CMakeFiles/client.dir/all: src/CMakeFiles/krpc_core.dir/all
 
 # Build rule for subdir invocation for target.
 example/caller/CMakeFiles/client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leo/CppProgram/Krpc/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leo/CppProgram/Krpc/cmake-build-debug/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example/caller/CMakeFiles/client.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leo/CppProgram/Krpc/cmake-build-debug/CMakeFiles 0
 .PHONY : example/caller/CMakeFiles/client.dir/rule

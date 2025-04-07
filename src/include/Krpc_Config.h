@@ -34,7 +34,8 @@ private:
      */
     void Trim(std::string & read_buf);
 private:
-    std::unordered_map<std::string, std::string> config_map; /// 配置存储容器
+    /// 配置存储容器
+    std::unordered_map<std::string, std::string> config_map;
 };
 
 #endif //KRPC_KRPCCONFIG_H

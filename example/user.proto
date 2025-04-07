@@ -29,7 +29,8 @@ message RegisterResponse{
     bool success = 2;
 }
 // 远程服务接口类
-service UserServiceRpc{
+// 生成通用的服务基类UserServiceRpc：继承 google::protobuf::Service
+service UserServiceRpc {
     // 定义Login远程方法
     // 客户端发送LoginRequest 消息，服务端返回 LoginResponse
     rpc Login(LoginRequest) returns(LoginResponse);

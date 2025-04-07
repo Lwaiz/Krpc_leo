@@ -73,7 +73,7 @@ void KrpcChannel::CallMethod(const ::google::protobuf::MethodDescriptor *method,
             LOG(ERROR) << "connect server error";
             return;
         } else {
-            LOG(ERROR) << "connect server success";
+            LOG(INFO) << "connect server success";
         }
     }
 

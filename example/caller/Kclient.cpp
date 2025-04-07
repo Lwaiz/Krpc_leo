@@ -20,7 +20,6 @@
 /**
  * @brief 发送 RPC 请求的函数 模拟客户端调用远程服务
  */
-
 void send_request(int thread_id, std::atomic<int> &success_count, std::atomic<int> &fail_count){
     // 创建一个UserServiceRpc_Stub对象，用于调用远程的 RPC 方法
     Kuser::UserServiceRpc_Stub stub(new KrpcChannel(false));
@@ -43,7 +42,7 @@ void send_request(int thread_id, std::atomic<int> &success_count, std::atomic<in
         fail_count++;  // 失败计数加 1
     } else {           // 如果调用成功
         if(0 == response.result().errcode()) {   // 检查响应中的错误码
-            std::cout << "rpc login response success: " << response.success() << std::endl;
+            LOG(INFO) << "Thread " << thread_id << " login response success: " << response.success();
             success_count++; // 成功计数 +1
         } else {       // 如果响应中有错误
             std::cout << "rpc login response error : " << response.result().errmsg() << std::endl;
@@ -59,7 +58,7 @@ int main(int argc, char **argv) {
     // 创建日志对象
     KrpcLogger logger("LeoRPC");
     const int thread_count = 10;      // 并发线程数
-    const int request_per_thread = 1; // 每个线程发送的请求书
+    const int request_per_thread = 100; // 每个线程发送的请求数
 
     std::vector<std::thread> threads;     // 存储线程对象的容器
     std::atomic<int> success_count(0);  // 成功请求的计数器

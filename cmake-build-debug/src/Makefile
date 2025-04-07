@@ -130,6 +130,54 @@ krpc_core/fast:
 	cd /home/leo/CppProgram/Krpc/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/krpc_core.dir/build.make src/CMakeFiles/krpc_core.dir/build
 .PHONY : krpc_core/fast
 
+Krpc_Application.o: Krpc_Application.cpp.o
+.PHONY : Krpc_Application.o
+
+# target to build an object file
+Krpc_Application.cpp.o:
+	cd /home/leo/CppProgram/Krpc/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/krpc_core.dir/build.make src/CMakeFiles/krpc_core.dir/Krpc_Application.cpp.o
+.PHONY : Krpc_Application.cpp.o
+
+Krpc_Application.i: Krpc_Application.cpp.i
+.PHONY : Krpc_Application.i
+
+# target to preprocess a source file
+Krpc_Application.cpp.i:
+	cd /home/leo/CppProgram/Krpc/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/krpc_core.dir/build.make src/CMakeFiles/krpc_core.dir/Krpc_Application.cpp.i
+.PHONY : Krpc_Application.cpp.i
+
+Krpc_Application.s: Krpc_Application.cpp.s
+.PHONY : Krpc_Application.s
+
+# target to generate assembly for a file
+Krpc_Application.cpp.s:
+	cd /home/leo/CppProgram/Krpc/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/krpc_core.dir/build.make src/CMakeFiles/krpc_core.dir/Krpc_Application.cpp.s
+.PHONY : Krpc_Application.cpp.s
+
+Krpc_Channel.o: Krpc_Channel.cpp.o
+.PHONY : Krpc_Channel.o
+
+# target to build an object file
+Krpc_Channel.cpp.o:
+	cd /home/leo/CppProgram/Krpc/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/krpc_core.dir/build.make src/CMakeFiles/krpc_core.dir/Krpc_Channel.cpp.o
+.PHONY : Krpc_Channel.cpp.o
+
+Krpc_Channel.i: Krpc_Channel.cpp.i
+.PHONY : Krpc_Channel.i
+
+# target to preprocess a source file
+Krpc_Channel.cpp.i:
+	cd /home/leo/CppProgram/Krpc/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/krpc_core.dir/build.make src/CMakeFiles/krpc_core.dir/Krpc_Channel.cpp.i
+.PHONY : Krpc_Channel.cpp.i
+
+Krpc_Channel.s: Krpc_Channel.cpp.s
+.PHONY : Krpc_Channel.s
+
+# target to generate assembly for a file
+Krpc_Channel.cpp.s:
+	cd /home/leo/CppProgram/Krpc/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/krpc_core.dir/build.make src/CMakeFiles/krpc_core.dir/Krpc_Channel.cpp.s
+.PHONY : Krpc_Channel.cpp.s
+
 Krpc_Config.o: Krpc_Config.cpp.o
 .PHONY : Krpc_Config.o
 
@@ -154,6 +202,78 @@ Krpc_Config.cpp.s:
 	cd /home/leo/CppProgram/Krpc/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/krpc_core.dir/build.make src/CMakeFiles/krpc_core.dir/Krpc_Config.cpp.s
 .PHONY : Krpc_Config.cpp.s
 
+Krpc_Controller.o: Krpc_Controller.cpp.o
+.PHONY : Krpc_Controller.o
+
+# target to build an object file
+Krpc_Controller.cpp.o:
+	cd /home/leo/CppProgram/Krpc/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/krpc_core.dir/build.make src/CMakeFiles/krpc_core.dir/Krpc_Controller.cpp.o
+.PHONY : Krpc_Controller.cpp.o
+
+Krpc_Controller.i: Krpc_Controller.cpp.i
+.PHONY : Krpc_Controller.i
+
+# target to preprocess a source file
+Krpc_Controller.cpp.i:
+	cd /home/leo/CppProgram/Krpc/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/krpc_core.dir/build.make src/CMakeFiles/krpc_core.dir/Krpc_Controller.cpp.i
+.PHONY : Krpc_Controller.cpp.i
+
+Krpc_Controller.s: Krpc_Controller.cpp.s
+.PHONY : Krpc_Controller.s
+
+# target to generate assembly for a file
+Krpc_Controller.cpp.s:
+	cd /home/leo/CppProgram/Krpc/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/krpc_core.dir/build.make src/CMakeFiles/krpc_core.dir/Krpc_Controller.cpp.s
+.PHONY : Krpc_Controller.cpp.s
+
+Krpc_Provider.o: Krpc_Provider.cpp.o
+.PHONY : Krpc_Provider.o
+
+# target to build an object file
+Krpc_Provider.cpp.o:
+	cd /home/leo/CppProgram/Krpc/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/krpc_core.dir/build.make src/CMakeFiles/krpc_core.dir/Krpc_Provider.cpp.o
+.PHONY : Krpc_Provider.cpp.o
+
+Krpc_Provider.i: Krpc_Provider.cpp.i
+.PHONY : Krpc_Provider.i
+
+# target to preprocess a source file
+Krpc_Provider.cpp.i:
+	cd /home/leo/CppProgram/Krpc/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/krpc_core.dir/build.make src/CMakeFiles/krpc_core.dir/Krpc_Provider.cpp.i
+.PHONY : Krpc_Provider.cpp.i
+
+Krpc_Provider.s: Krpc_Provider.cpp.s
+.PHONY : Krpc_Provider.s
+
+# target to generate assembly for a file
+Krpc_Provider.cpp.s:
+	cd /home/leo/CppProgram/Krpc/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/krpc_core.dir/build.make src/CMakeFiles/krpc_core.dir/Krpc_Provider.cpp.s
+.PHONY : Krpc_Provider.cpp.s
+
+zookeeperUtil.o: zookeeperUtil.cpp.o
+.PHONY : zookeeperUtil.o
+
+# target to build an object file
+zookeeperUtil.cpp.o:
+	cd /home/leo/CppProgram/Krpc/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/krpc_core.dir/build.make src/CMakeFiles/krpc_core.dir/zookeeperUtil.cpp.o
+.PHONY : zookeeperUtil.cpp.o
+
+zookeeperUtil.i: zookeeperUtil.cpp.i
+.PHONY : zookeeperUtil.i
+
+# target to preprocess a source file
+zookeeperUtil.cpp.i:
+	cd /home/leo/CppProgram/Krpc/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/krpc_core.dir/build.make src/CMakeFiles/krpc_core.dir/zookeeperUtil.cpp.i
+.PHONY : zookeeperUtil.cpp.i
+
+zookeeperUtil.s: zookeeperUtil.cpp.s
+.PHONY : zookeeperUtil.s
+
+# target to generate assembly for a file
+zookeeperUtil.cpp.s:
+	cd /home/leo/CppProgram/Krpc/cmake-build-debug && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/krpc_core.dir/build.make src/CMakeFiles/krpc_core.dir/zookeeperUtil.cpp.s
+.PHONY : zookeeperUtil.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -163,9 +283,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... krpc_core"
+	@echo "... Krpc_Application.o"
+	@echo "... Krpc_Application.i"
+	@echo "... Krpc_Application.s"
+	@echo "... Krpc_Channel.o"
+	@echo "... Krpc_Channel.i"
+	@echo "... Krpc_Channel.s"
 	@echo "... Krpc_Config.o"
 	@echo "... Krpc_Config.i"
 	@echo "... Krpc_Config.s"
+	@echo "... Krpc_Controller.o"
+	@echo "... Krpc_Controller.i"
+	@echo "... Krpc_Controller.s"
+	@echo "... Krpc_Provider.o"
+	@echo "... Krpc_Provider.i"
+	@echo "... Krpc_Provider.s"
+	@echo "... zookeeperUtil.o"
+	@echo "... zookeeperUtil.i"
+	@echo "... zookeeperUtil.s"
 .PHONY : help
 
 

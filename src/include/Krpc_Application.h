@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file           : Krpc_Application.h
   * @author         : 18483
-  * @brief          : Krpc 基础类
+  * @brief          : Krpc 基础类 初始化
   * @attention      : None
   * @date           : 2025/4/5
   ******************************************************************************
@@ -23,7 +23,7 @@
 class KrpcApplication {
 public:
     /**
-     * @brief 初始化函数
+     * @brief   初始化函数
      * @details 解析命令行参数 并加载配置文件
      */
     static void Init(int argc, char** argv);
@@ -41,13 +41,14 @@ public:
     static KrpcConfig& GetConfig();
 
 private:
+    /// 单例模式 私有构造、析构 ，禁用拷贝构造、移动构造
     KrpcApplication(){}
     ~KrpcApplication(){}
     KrpcApplication(const KrpcApplication &) = delete;
     KrpcApplication(KrpcApplication &&) = delete;
 
 private:
-    static KrpcConfig m_config;
+    static KrpcConfig m_config;             // 全局配置对象
     static KrpcApplication* m_application;  // 全局唯一单例访问对象
     static std::mutex m_mutex;
 };

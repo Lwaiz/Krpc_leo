@@ -39,13 +39,13 @@ void KrpcProvider::NotifyService(google::protobuf::Service* service){
     /// 通过 ServiceDescriptor 获取该服务类中定义的方法列表并进行相应的注册和管理
     std::string service_name = psd->name();  // 获取服务的名字
     int method_count = psd->method_count();  // 获取服务端对象 service 的方法数量
-    std::cout << "service_name= " << service_name << std::endl;
+    std::cout << "service_name = " << service_name << std::endl;
     // 遍历服务中的所有方法，并注册到服务信息中
     for(int i = 0; i < method_count; ++i) {
         // 获取服务中的方法描述
         const google::protobuf::MethodDescriptor *pmd = psd->method(i);
         std::string method_name = pmd->name();
-        std::cout << "method_name= " << method_name << std::endl;
+        std::cout << "method_name = " << method_name << std::endl;
         // 将方法名和方法描述存入 method_map
         service_info.method_map.emplace(method_name, pmd);
     }
@@ -178,6 +178,7 @@ void KrpcProvider::OnMessage(const muduo::net::TcpConnectionPtr& conn,
     /// 生成 RPC 方法调用请求的request和响应的response参数
     // 动态创建请求对象
     google::protobuf::Message * request = service->GetRequestPrototype(method).New();
+    // 解析请求参数
     if(!request->ParseFromString(args_str)) {
         std::cout << service_name << "." << method_name << " parse error!" << std::endl;
         return;
@@ -206,7 +207,7 @@ void KrpcProvider::SendRpcResponse(const muduo::net::TcpConnectionPtr& conn, goo
     if(response->SerializeToString(&response_str)) {
         conn->send(response_str);
     } else {
-        std::cout << "Serialize error!" << std::endl;
+        std::cout << "Serialize Response error!" << std::endl;
     }
     // conn->shutdown(); // 模拟HTTP短链接，由RpcProvider主动断开连接
 }

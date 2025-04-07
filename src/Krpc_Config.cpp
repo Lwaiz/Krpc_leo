@@ -63,9 +63,16 @@ void KrpcConfig::Trim(std::string &read_buf) {
     if(index != -1) {
         read_buf = read_buf.substr(index, read_buf.size() - index); // 截取字符串
     }
+    // 由于windows下文件换行符是'\r\n' , linux下换行符是'\n'
+    // windows下建立的config文件解析过程中 可能出现问题
+    index = read_buf.find_last_not_of('\r');
+    if(index != -1) {
+        read_buf = read_buf.substr(0, index + 1); // 截取字符串
+    }
     // 去掉字符串后面的空格
     index = read_buf.find_last_not_of(' ');
     if(index != -1) {
         read_buf = read_buf.substr(0, index + 1); // 截取字符串
     }
+
 }
